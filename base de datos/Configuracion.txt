@@ -1,0 +1,6 @@
+Base url del proyecto 
+http://localhost/itla/TR_Fantasia/
+
+Integrantes
+Wilber J. Tapia 2017-5283
+Rolando Valdez. O. 2017-5703
