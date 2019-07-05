@@ -64,9 +64,9 @@ if (isset($id)) {
  ?>
 
  <div class="container">
+	 <br>
     <div class='row justify-content-center'>
     <h3>Listado de clientes</h3>
-    <br>
     <br>
     </div>
     <div class='row justify-content-center'>
@@ -97,7 +97,7 @@ if (isset($id)) {
 			      <a href="{$urlEditar}" class="btn btn-warning">
 						<i class="fa fa-edit" aria-hidden="true"></i></a>
 						<button name="si" onclick='show(this);' id="{$clientes->id}" class="btn btn-primary">
-						<i class="fa fa-edit" aria-hidden="true"></i>VER</button></td>
+						<i class="fa fa-picture-o" aria-hidden="true"></i>VER</button></td>
             </tr>
 CLIENTES;
 }?>
@@ -151,6 +151,9 @@ CLIENTES;
 					</div>
 				</div>
 	</form>
+	<div style="margin-bottom: 150px;">
+
+	</div>
 	<script type="text/javascript">
 		function show(btn) {
 			let id = btn.id;

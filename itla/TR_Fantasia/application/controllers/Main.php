@@ -39,6 +39,10 @@ class Main extends CI_Controller{
     $this -> load -> view("facturar");
   }
 
+  public function verFactura(){
+    $this -> load -> view("ver_factura");
+  }
+
   public function editar($tabla, $id=0){
     $tabla = $this->uri->segment(3);
     $id = $this->uri->segment(4);
@@ -48,6 +52,7 @@ class Main extends CI_Controller{
   public function mostrar(){
     $this -> load -> view('mostrar');
   }
+
   public function editarF($id = 0){
     $this -> load -> view('facturar',['idC'=>$id]);
   }

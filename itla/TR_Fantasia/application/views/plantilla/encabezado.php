@@ -28,10 +28,9 @@ session_start();
   <link href="<?= $base; ?>/css/the-big-picture.css" rel="stylesheet"> -->
 </head>
 
-<body>
-
+<body >
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom" >
     <div class="container">
       <a class="nav-link" style="color:white"><?php echo 'Hola, '.$_SESSION['nombre']; ?></a>
       <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
@@ -40,7 +39,7 @@ session_start();
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="<?= base_url(); ?>">Inicio
               <span class="sr-only">(current)</span>
             </a>
@@ -50,8 +49,9 @@ session_start();
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('main/clientes'); ?>">Clientes</a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="<?= base_url('main/factura'); ?>">Factura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('main/verFactura'); ?>">Ver Facturas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('main/reportes'); ?>">Reporte</a>

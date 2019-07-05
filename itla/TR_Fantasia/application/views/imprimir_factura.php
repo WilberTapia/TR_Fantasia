@@ -35,7 +35,7 @@ $subtotal = 0;
 CEDULA: <?php echo $cliente[0]['Cedula'];?>
 
 
-NOMBRE: <?php echo $cliente[0]['Nombre']; ?>
+NOMBRE: <?php echo $cliente[0]['Nombre']; ?>                  TELEFONO:  <?php echo $cliente[0]['Telefono']; ?>             CORREO: <?php echo $cliente[0]['Correo']; ?>
 
 
 RNC: XXXXXXXXXXX
@@ -108,6 +108,8 @@ echo "\n ".$det[$i]['cantidad']."                  ".$art[0]['Nombre']."        
                                                                                                                   TOTAL    <?php echo number_format($det[0]["total"],2); ?>
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+<?php session_start(); ?>
+VENDEDOR: <?php echo $_SESSION['nombre']; ?>          FECHA: <?php echo $factura[0]['fecha']; ?>
 </pre>
 <br>
 </body>

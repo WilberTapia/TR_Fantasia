@@ -54,8 +54,6 @@ if($_POST){
 	}
 	$CI ->db->update_batch('articulos', $datosA,'id');
 
-
-
 redirect('main/imprimirF/'.$idF[0]['id_factura']);
 }else if (isset($idC)) {
   $rs = core_crud::x_id($idC,'clientes');
@@ -66,9 +64,8 @@ redirect('main/imprimirF/'.$idF[0]['id_factura']);
  ?>
 <div class="container">
 <br>
-<br>
 <div class="row justify-content-center">
-  <h3>Factura </h3>
+  <h3>Factura TR Fantasia </h3>
 </div>
 <div class="flex-column d-flex float-right" >
 
@@ -119,7 +116,9 @@ redirect('main/imprimirF/'.$idF[0]['id_factura']);
       </div>
     </div>
     </form>
-<br><br><br>
+		<div style="margin-bottom: 350px;">
+
+		</div>
     <dialog id="dialogClientes" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">
       <div class="card">
         <div class="card-body">
@@ -161,7 +160,6 @@ CLIENTES;
       <br>
       <button onclick="hide();" type="button" class="btn btn-primary float-right">Cerrar</button>
     </dialog>
-
 		<?php $rs = $CI->db->get('articulos')->result_array();
 		$json = json_encode($rs);
 		file_put_contents("datos.json", $json);

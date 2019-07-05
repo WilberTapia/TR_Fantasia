@@ -10,13 +10,12 @@ if($_POST){
 }
  ?>
 
+ <div class="container">
+	 <br><br>
     <div class='row justify-content-center'>
     <h3>Listado de usuarios</h3>
     <br>
-    <br>
     </div>
-        <div class="container">
-    <div class='row justify-content-center'>
         <table class='table'>
             <thead>
                 <tr>
@@ -40,7 +39,6 @@ usuarioS;
 }?>
 				</tbody>
       </table>
-    </div>
 
 <br>
 
@@ -74,3 +72,7 @@ usuarioS;
 					</div>
 				</div>
 	</form>
+</div>
+<div style="margin-bottom: 150px;">
+
+</div>

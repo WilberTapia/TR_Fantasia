@@ -6,13 +6,11 @@ if (!isset($_SESSION['nombre'])) {
 
 <br>
 
-    <div class='row justify-content-center'>
+<div class="container">
+	<br>
+	<div class='row justify-content-center'>
     <h3>Listado de articulos</h3>
     <br>
-    <br>
-    </div>
-        <div class="container">
-    <div class='row justify-content-center'>
         <table class='table'>
             <thead>
                 <tr>
@@ -36,5 +34,8 @@ ARTICULOS;
 				</tbody>
       </table>
     </div>
+		<div style="margin-bottom: 350px;">
 
+		</div>
 <br>
+</div>

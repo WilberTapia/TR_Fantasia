@@ -63,13 +63,12 @@ if (isset($id)) {
 }
  ?>
 
-    <div class='row justify-content-center'>
+ <div class="container">
+	 <div class='row justify-content-center'>
+		 <br>
     <h3>Listado de articulos</h3>
     <br>
-    <br>
     </div>
-        <div class="container">
-    <div class='row justify-content-center'>
         <table class='table'>
             <thead>
                 <tr>
@@ -97,7 +96,7 @@ if (isset($id)) {
 			      <a href="{$urlEditar}" class="btn btn-warning">
 						<i class="fa fa-edit" aria-hidden="true"></i></a>
 						<button name="si" onclick='show(this);' id="{$articulos->id}" class="btn btn-primary">
-						<i class="fa fa-edit" aria-hidden="true"></i>VER</button>
+						<i class="fa fa-picture-o" aria-hidden="true"></i>VER</button>
 
 						</td>
             </tr>
@@ -105,7 +104,6 @@ ARTICULOS;
 }?>
 				</tbody>
       </table>
-    </div>
 <br>
 
 <div class='row justify-content-center'>
@@ -152,7 +150,10 @@ ARTICULOS;
 					</div>
 				</div>
 	</form>
+</div>
+	<div style="margin-bottom: 150px;">
 
+	</div>
 	<script type="text/javascript">
 	var dialog = document.getElementById('dialogA');
 
